@@ -1,0 +1,7 @@
+C:\Users\krust\OneDrive\Bureau\C#\Mutant\Mutant\bin\Debug\Mutant.exe.config
+C:\Users\krust\OneDrive\Bureau\C#\Mutant\Mutant\bin\Debug\Mutant.exe
+C:\Users\krust\OneDrive\Bureau\C#\Mutant\Mutant\bin\Debug\Mutant.pdb
+C:\Users\krust\OneDrive\Bureau\C#\Mutant\Mutant\obj\Debug\Mutant.csproj.AssemblyReference.cache
+C:\Users\krust\OneDrive\Bureau\C#\Mutant\Mutant\obj\Debug\Mutant.csproj.CoreCompileInputs.cache
+C:\Users\krust\OneDrive\Bureau\C#\Mutant\Mutant\obj\Debug\Mutant.exe
+C:\Users\krust\OneDrive\Bureau\C#\Mutant\Mutant\obj\Debug\Mutant.pdb
