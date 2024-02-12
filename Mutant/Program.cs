@@ -12,18 +12,27 @@ namespace Mutant
         static void Main(string[] args)
         {
             List<Mutant> mutants = new List<Mutant>();
-            Mutant mutant = new Mutant();
-            mutants.Add(mutant);
+            Mutant mutant1 = new Mutant();
+            Thread.Sleep(10);
+            Mutant mutant2 = new Mutant();
+            Thread.Sleep(10);
+            Mutant mutant3 = new Mutant();
+            mutants.Add(mutant1);
+            mutants.Add(mutant2);
+            mutants.Add(mutant3);
+
 
             Map map = new Map(mutants);
 
             while(true)
             {
+                int debugMutant = 1;
                 Console.Clear();
                 Console.SetCursorPosition(0,0);
                 foreach(Mutant mutantInList in mutants)
                 {
                     mutantInList.Life(map);
+
                 }
                 map.DisplayMap();
                 Thread.Sleep(50);

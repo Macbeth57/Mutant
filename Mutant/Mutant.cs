@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Mutant
@@ -24,6 +25,8 @@ namespace Mutant
 
         public Mutant() 
         {
+            Random random = new Random();
+
             MutantCells = new int[,]
             {
                 { 0, 0, 0, 0, 0},
@@ -33,16 +36,16 @@ namespace Mutant
                 { 0, 0, 0, 0, 0}
             };
 
-            XCoordinate = 15;
-            YCoordinate = 15;
+            XCoordinate = random.Next(10,101);
+            YCoordinate = random.Next(10,21);
             Age = 0;
-            MovementSpeed = 1;
+            MovementSpeed = random.Next(1,3);
             GrowSpeed = 1;
             SizeMax = 10;
             Size = 1;
             Weight = 1;
-            Direction = 2;
-            DirectionChangeFrequency = 3;
+            Direction = random.Next(1,5);
+            DirectionChangeFrequency = random.Next(2,6);
             DirectionWeariness = DirectionChangeFrequency;
             IsColliding = false;
         }
@@ -55,6 +58,7 @@ namespace Mutant
             }
             DirectionWeariness--;
             Move(map);
+            //Thread.Sleep(1);
         }
         public void Move(Map map)
         {
